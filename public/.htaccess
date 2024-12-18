@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Bỏ qua các tệp tĩnh nếu chúng tồn tại
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Chuyển hướng tất cả request khác về index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

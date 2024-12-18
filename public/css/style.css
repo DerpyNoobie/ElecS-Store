@@ -1,0 +1,508 @@
+/* === Reset CSS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Áp dụng font cho toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Utility Classes === */
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Spacing */
+.p-4 {
+  padding: 1rem;
+}
+.pr-4 {
+  padding-right: 1rem;
+}
+.pl-4 {
+  padding-left: 1rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+.m-8 {
+  margin: 2rem;
+}
+.text-white {
+  color: white;
+}
+.gap-30 {
+  gap: 30px;
+}
+.font-14 {
+  font-size: 14px;
+}
+/* Width and Height */
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+
+.w-100vh {
+  width: 100vw;
+}
+.h-100vh {
+  height: 100vh;
+}
+.h-40 {
+  height: 40px;
+}
+.padding-30 {
+  padding: 30px;
+}
+
+.padding-100 {
+  padding: 100px;
+}
+.width-340 {
+  width: 340px;
+}
+.bg-shopee {
+  background-color: #ee4d2d;
+}
+
+.text-shopee {
+  color: #ee4d2d;
+}
+
+/* Typography */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-light {
+  font-weight: 300;
+}
+
+/* Colors */
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-gray-100 {
+  background-color: #f5f5f5;
+}
+.text-gray-200 {
+  color: #b3a2a2;
+}
+.bg-gray-200 {
+  background-color: #e5e5e5;
+}
+.bg-red-500 {
+  background-color: #f56565;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-gray-700 {
+  color: #4a5568;
+}
+.text-gray-900 {
+  color: #1a202c;
+}
+
+/* Borders */
+.border-none {
+  border: none;
+}
+.border {
+  border: 1px solid #e2e8f0;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Hover Effects */
+.hover\:bg-gray-300:hover {
+  background-color: #d1d5db;
+}
+.hover\:text-red-500:hover {
+  color: #f56565;
+}
+
+/* Shadows */
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.w-400 {
+  width: 400px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.h-84 {
+  height: 84px;
+}
+.text-24 {
+  font-size: 24px;
+}
+.lead-52 {
+  line-height: 52px;
+}
+.container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+input {
+  border: 1px solid #d7b6b6;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #e52d39; /* Thêm viền màu khác */
+  box-shadow: 0 0 5px rgba(219, 221, 224, 0.877); /* Thêm bóng đổ */
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+.category-container {
+  padding: 2px 15px;
+  border: 0.5px solid #c2c6cc;
+}
+.padding-header {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.search-bar button {
+  background-color: #ff5000;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  color: white;
+  font-size: 18px;
+}
+
+.user-actions a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  color: #333;
+}
+
+.categories,
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.category-card,
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 17%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover,
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card i,
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-card h3,
+.product-card h3 {
+  padding: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.category-card p,
+.product-card .price {
+  padding: 0 15px 15px;
+  font-size: 16px;
+  color: #777;
+}
+
+.product-rating {
+  padding: 0 15px;
+}
+
+.product-rating i {
+  color: #ffd700;
+}
+
+.product-card button {
+  background-color: #ff5000;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.fixed {
+  display: fixed !important;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Thêm vào file CSS của bạn */
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.add-to-cart-form input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.btn-remove {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background-color: #ff2c2c;
+}
+
+.btn-plus,
+.btn-minus {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-plus:hover,
+.btn-minus:hover {
+  background-color: #f6f6f6;
+}
+
+/* Phong cách chung cho thông báo */
+.message {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Thông báo khi người dùng đã đăng nhập */
+.message-welcome {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Thông báo khi người dùng chưa đăng nhập */
+.message-login {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Thông báo khi giỏ hàng trống */
+.message-cart-empty {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+.h-500 {
+  height: 500px;
+}
