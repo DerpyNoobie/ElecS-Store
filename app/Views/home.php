@@ -10,6 +10,9 @@
         <div class="swiper-slide">
             <img src="https://cf.shopee.vn/file/sg-11134258-7rfg2-m3ltquoff8px11_xxhdpi" alt="Promotion 3">
         </div>
+        <div class="swiper-slide">
+            <img src="https://th.bing.com/th/id/OIP.nl7q0ObXdN_UKfWUInrC8wHaCm?rs=1&pid=ImgDetMain" alt="Promotion 4" style="height: 453.9px;">
+        </div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
